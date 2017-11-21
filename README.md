@@ -47,13 +47,20 @@ $ cd CloudFunctions/functions
 $ npm install
 ```
 
-3. compile TypeScript
+3. set Algolia API Key
+
+```
+// algoliaProvider.ts
+const algolia = algoliasearch('APP_ID', 'API_KEY')
+```
+
+4. compile TypeScript
 
 ```
 $ npm run build
 ```
 
-4. deploy
+5. deploy
 
 ```
 $ firebase deploy --only functions
