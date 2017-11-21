@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1D-I8-I1j">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post View Controller-->
+        <scene sceneID="l52-7e-nqa">
+            <objects>
+                <viewController id="k1D-I8-I1j" customClass="PostViewController" customModule="AlgoliaFirebaseSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4J2-c2-JZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYD-a5-UMV">
+                                <rect key="frame" x="247" y="522" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.23137254900000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="15H-Nq-sTg"/>
+                                    <constraint firstAttribute="width" secondItem="TYD-a5-UMV" secondAttribute="height" multiplier="1:1" id="ySU-MV-2Bg"/>
+                                </constraints>
+                                <state key="normal" title="写真">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iMasksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapPhotoButton:" destination="k1D-I8-I1j" eventType="touchUpInside" id="dCj-M8-3NX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-2v-WpZ">
+                                <rect key="frame" x="64" y="522" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.9360351562" green="0.48963758680000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g1c-2v-WpZ" secondAttribute="height" multiplier="1:1" id="bT4-an-yiv"/>
+                                    <constraint firstAttribute="width" constant="64" id="cnA-Fe-kJE"/>
+                                </constraints>
+                                <state key="normal" title="日記">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iMasksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapDiaryButton:" destination="k1D-I8-I1j" eventType="touchUpInside" id="OGM-hi-euV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="近況を投稿しよう！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMy-oI-JLi">
+                                <rect key="frame" x="109" y="449" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TYD-a5-UMV" firstAttribute="top" secondItem="ZMy-oI-JLi" secondAttribute="bottom" constant="52" id="9DG-zH-ztm"/>
+                            <constraint firstItem="g1c-2v-WpZ" firstAttribute="width" secondItem="g1c-2v-WpZ" secondAttribute="height" multiplier="1:1" id="9Xo-Wf-cwo"/>
+                            <constraint firstItem="g1c-2v-WpZ" firstAttribute="leading" secondItem="i0g-fW-ur9" secondAttribute="leading" constant="64" id="F9C-s8-Hnz"/>
+                            <constraint firstItem="i0g-fW-ur9" firstAttribute="bottom" secondItem="TYD-a5-UMV" secondAttribute="bottom" constant="32" id="NSn-eG-6Nt"/>
+                            <constraint firstItem="i0g-fW-ur9" firstAttribute="bottom" secondItem="g1c-2v-WpZ" secondAttribute="bottom" constant="32" id="RQT-Mr-E3c"/>
+                            <constraint firstItem="i0g-fW-ur9" firstAttribute="trailing" secondItem="TYD-a5-UMV" secondAttribute="trailing" constant="64" id="lUV-FO-Vyp"/>
+                            <constraint firstItem="ZMy-oI-JLi" firstAttribute="centerX" secondItem="4J2-c2-JZ2" secondAttribute="centerX" id="vfl-UC-bo4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i0g-fW-ur9"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N82-ZE-rbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="-31"/>
+        </scene>
+    </scenes>
+</document>

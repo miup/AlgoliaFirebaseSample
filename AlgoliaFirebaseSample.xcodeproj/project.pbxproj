@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1F3D721FBEAF4000E29364 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D711FBEAF4000E29364 /* FeedCell.swift */; };
+		8C1F3D741FBEAF4700E29364 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D731FBEAF4700E29364 /* FeedCell.xib */; };
+		8C1F3D771FBEB0B200E29364 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D761FBEB0B200E29364 /* FeedHeaderView.swift */; };
+		8C1F3D791FBEB0BC00E29364 /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D781FBEB0BC00E29364 /* FeedHeaderView.xib */; };
+		8C1F3D7B1FBEC1A800E29364 /* FeedDiaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D7A1FBEC1A800E29364 /* FeedDiaryView.xib */; };
+		8C1F3D7D1FBEC1B100E29364 /* FeedDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D7C1FBEC1B100E29364 /* FeedDiaryView.swift */; };
+		8C1F3D7F1FBEC68B00E29364 /* FeedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D7E1FBEC68B00E29364 /* FeedPhotoView.swift */; };
+		8C1F3D811FBEC69200E29364 /* FeedPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D801FBEC69200E29364 /* FeedPhotoView.xib */; };
+		8C1F3D831FBEC86000E29364 /* FeedActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D821FBEC85F00E29364 /* FeedActionView.swift */; };
+		8C1F3D851FBEC86B00E29364 /* FeedActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D841FBEC86B00E29364 /* FeedActionView.xib */; };
+		8C1F3D8B1FBEFB5300E29364 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D8A1FBEFB5300E29364 /* AccountViewController.swift */; };
+		8C1F3D8D1FBF25E800E29364 /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D8C1FBF25E800E29364 /* SearchUseCase.swift */; };
+		8C1F3D8F1FBF2F4000E29364 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D8E1FBF2F4000E29364 /* SearchDataSource.swift */; };
+		8C1F3D911FBFE60800E29364 /* UsersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D901FBFE60800E29364 /* UsersDataSource.swift */; };
+		8C1F3D931FBFE61700E29364 /* UsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D921FBFE61700E29364 /* UsersUseCase.swift */; };
+		8C1F3D951FBFE64E00E29364 /* Algolia+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D941FBFE64E00E29364 /* Algolia+User.swift */; };
+		8C1F3D971FBFEA3E00E29364 /* AlgoliaUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D961FBFEA3E00E29364 /* AlgoliaUserRequest.swift */; };
+		8C1F3D9C1FBFEEF200E29364 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F3D9B1FBFEEF200E29364 /* UserCell.swift */; };
+		8C1F3D9E1FBFEEFB00E29364 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F3D9D1FBFEEFB00E29364 /* UserCell.xib */; };
+		8C25EA8F1FB751D000861DFA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA8E1FB751D000861DFA /* RootViewController.swift */; };
+		8C25EA931FB7525800861DFA /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA921FB7525800861DFA /* UIViewController+Ex.swift */; };
+		8C25EA951FB752AA00861DFA /* Auth+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA941FB752AA00861DFA /* Auth+Rx.swift */; };
+		8C25EA971FB752E600861DFA /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA961FB752E600861DFA /* Result+Ex.swift */; };
+		8C25EA9B1FB7531C00861DFA /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA9A1FB7531C00861DFA /* Firebase.swift */; };
+		8C25EA9E1FB7535C00861DFA /* Firebase+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA9D1FB7535C00861DFA /* Firebase+User.swift */; };
+		8C25EAA01FB7541400861DFA /* Referenceable+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EA9F1FB7541400861DFA /* Referenceable+Rx.swift */; };
+		8C25EAA31FB754DF00861DFA /* EntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EAA21FB754DF00861DFA /* EntranceViewController.swift */; };
+		8C25EAA51FB7550500861DFA /* EntranceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25EAA41FB7550500861DFA /* EntranceViewController.storyboard */; };
+		8C25EAA81FB756BB00861DFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EAA71FB756BB00861DFA /* TabBarController.swift */; };
+		8C25EAAC1FB75A3C00861DFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C25EAAB1FB75A3C00861DFA /* GoogleService-Info.plist */; };
+		8C25EAAE1FB83AFD00861DFA /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25EAAD1FB83AFD00861DFA /* LoginHelper.swift */; };
+		8C4FDBC21FBDD0E1006566F4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FDBC11FBDD0E1006566F4 /* PostViewController.swift */; };
+		8C4FDBC41FBDD0EC006566F4 /* PostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4FDBC31FBDD0EC006566F4 /* PostViewController.storyboard */; };
+		8C4FDBC91FBDD63D006566F4 /* PhotoPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FDBC81FBDD63D006566F4 /* PhotoPostViewController.swift */; };
+		8C4FDBCB1FBDD64A006566F4 /* PhotoPostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4FDBCA1FBDD64A006566F4 /* PhotoPostViewController.storyboard */; };
+		8C4FDBCD1FBDD99B006566F4 /* Firebase+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FDBCC1FBDD99B006566F4 /* Firebase+Photo.swift */; };
+		8C6D19CE1FBDE1510092638D /* TimelineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19CD1FBDE1510092638D /* TimelineUseCase.swift */; };
+		8C6D19D11FBDE2A00092638D /* Algolia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D01FBDE2A00092638D /* Algolia.swift */; };
+		8C6D19D31FBDE2BD0092638D /* Algolia+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D21FBDE2BD0092638D /* Algolia+Feed.swift */; };
+		8C6D19D51FBDE2D20092638D /* Algolia+Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D41FBDE2D20092638D /* Algolia+Diary.swift */; };
+		8C6D19D71FBDE2DA0092638D /* Algolia+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D61FBDE2DA0092638D /* Algolia+Photo.swift */; };
+		8C6D19D91FBDE5D90092638D /* AlgoliaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D81FBDE5D90092638D /* AlgoliaRepository.swift */; };
+		8C6D19DC1FBDE63E0092638D /* AlgoliaFeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19DB1FBDE63E0092638D /* AlgoliaFeedRequest.swift */; };
+		8C82394C1FBEA5CB00F61725 /* TimelineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82394B1FBEA5CB00F61725 /* TimelineDataSource.swift */; };
+		8CA7A99D1FC04844008F95DB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7A99C1FC04844008F95DB /* DiaryViewController.swift */; };
+		8CA7A99F1FC069A6008F95DB /* DiaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA7A99E1FC069A6008F95DB /* DiaryViewController.storyboard */; };
+		8CCE21091FBB366E00FEBDC9 /* Firebase+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE21081FBB366E00FEBDC9 /* Firebase+Post.swift */; };
+		8CCE210B1FBB3C1500FEBDC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCE210A1FBB3C0700FEBDC9 /* CoreLocation.framework */; };
+		8CCE210D1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE210C1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift */; };
+		8CCE210F1FBB3FC700FEBDC9 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE210E1FBB3FC700FEBDC9 /* CLLocationManager+Rx.swift */; };
+		8CCE21111FBB400D00FEBDC9 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE21101FBB400D00FEBDC9 /* RxCLLocationManagerDelegateProxy.swift */; };
+		8CCE21131FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE21121FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift */; };
+		8CCE21151FBB4F2600FEBDC9 /* UITextView+CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE21141FBB4F2600FEBDC9 /* UITextView+CloseButton.swift */; };
+		8CD2B0A31FB7271C0064FDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2B0A21FB7271C0064FDCD /* AppDelegate.swift */; };
+		8CD2B0AA1FB7271C0064FDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD2B0A91FB7271C0064FDCD /* Assets.xcassets */; };
+		8CD2B0AD1FB7271C0064FDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD2B0AB1FB7271C0064FDCD /* LaunchScreen.storyboard */; };
+		8CD948891FB83C11000C85A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD948881FB83C11000C85A9 /* ViewController.swift */; };
+		8CD9488B1FB83CA2000C85A9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9488A1FB83CA2000C85A9 /* ActivityIndicator.swift */; };
+		8CD9488D1FB83CBA000C85A9 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9488C1FB83CBA000C85A9 /* WindowManager.swift */; };
+		8CD9488F1FB8515C000C85A9 /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9488E1FB8515C000C85A9 /* Array+Ex.swift */; };
+		8CD948951FB85448000C85A9 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD948941FB85448000C85A9 /* TimelineViewController.swift */; };
+		8CD948971FB85452000C85A9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD948961FB85452000C85A9 /* SearchViewController.swift */; };
+		8CD948991FB8545B000C85A9 /* DiaryPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD948981FB8545B000C85A9 /* DiaryPostViewController.swift */; };
+		8CD9489B1FB85463000C85A9 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9489A1FB85463000C85A9 /* UsersViewController.swift */; };
+		8CE466D91FB985FC0038EDD8 /* DiaryPostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE466D81FB985FC0038EDD8 /* DiaryPostViewController.storyboard */; };
+		8CE527011FBC901C00061E19 /* Firebase+Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE527001FBC901C00061E19 /* Firebase+Relation.swift */; };
+		8CE527031FBC913400061E19 /* Firebase+Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE527021FBC913400061E19 /* Firebase+Diary.swift */; };
+		F443DEFCF2B8500986BD0BED /* Pods_AlgoliaFirebaseSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF503D29C8EA96FD2937F87 /* Pods_AlgoliaFirebaseSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AF503D29C8EA96FD2937F87 /* Pods_AlgoliaFirebaseSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgoliaFirebaseSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DB5FD100C1ACB23E603427 /* Pods-AlgoliaFirebaseSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgoliaFirebaseSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlgoliaFirebaseSample/Pods-AlgoliaFirebaseSample.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1F3D711FBEAF4000E29364 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		8C1F3D731FBEAF4700E29364 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		8C1F3D761FBEB0B200E29364 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		8C1F3D781FBEB0BC00E29364 /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
+		8C1F3D7A1FBEC1A800E29364 /* FeedDiaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDiaryView.xib; sourceTree = "<group>"; };
+		8C1F3D7C1FBEC1B100E29364 /* FeedDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDiaryView.swift; sourceTree = "<group>"; };
+		8C1F3D7E1FBEC68B00E29364 /* FeedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPhotoView.swift; sourceTree = "<group>"; };
+		8C1F3D801FBEC69200E29364 /* FeedPhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedPhotoView.xib; sourceTree = "<group>"; };
+		8C1F3D821FBEC85F00E29364 /* FeedActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedActionView.swift; sourceTree = "<group>"; };
+		8C1F3D841FBEC86B00E29364 /* FeedActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedActionView.xib; sourceTree = "<group>"; };
+		8C1F3D8A1FBEFB5300E29364 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		8C1F3D8C1FBF25E800E29364 /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		8C1F3D8E1FBF2F4000E29364 /* SearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
+		8C1F3D901FBFE60800E29364 /* UsersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataSource.swift; sourceTree = "<group>"; };
+		8C1F3D921FBFE61700E29364 /* UsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCase.swift; sourceTree = "<group>"; };
+		8C1F3D941FBFE64E00E29364 /* Algolia+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algolia+User.swift"; sourceTree = "<group>"; };
+		8C1F3D961FBFEA3E00E29364 /* AlgoliaUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaUserRequest.swift; sourceTree = "<group>"; };
+		8C1F3D9B1FBFEEF200E29364 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		8C1F3D9D1FBFEEFB00E29364 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		8C25EA8E1FB751D000861DFA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8C25EA921FB7525800861DFA /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		8C25EA941FB752AA00861DFA /* Auth+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth+Rx.swift"; sourceTree = "<group>"; };
+		8C25EA961FB752E600861DFA /* Result+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
+		8C25EA9A1FB7531C00861DFA /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		8C25EA9D1FB7535C00861DFA /* Firebase+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+User.swift"; sourceTree = "<group>"; };
+		8C25EA9F1FB7541400861DFA /* Referenceable+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Referenceable+Rx.swift"; sourceTree = "<group>"; };
+		8C25EAA21FB754DF00861DFA /* EntranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
+		8C25EAA41FB7550500861DFA /* EntranceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntranceViewController.storyboard; sourceTree = "<group>"; };
+		8C25EAA71FB756BB00861DFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8C25EAAB1FB75A3C00861DFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C25EAAD1FB83AFD00861DFA /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		8C4FDBC11FBDD0E1006566F4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		8C4FDBC31FBDD0EC006566F4 /* PostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostViewController.storyboard; sourceTree = "<group>"; };
+		8C4FDBC81FBDD63D006566F4 /* PhotoPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPostViewController.swift; sourceTree = "<group>"; };
+		8C4FDBCA1FBDD64A006566F4 /* PhotoPostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoPostViewController.storyboard; sourceTree = "<group>"; };
+		8C4FDBCC1FBDD99B006566F4 /* Firebase+Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Photo.swift"; sourceTree = "<group>"; };
+		8C6D19CD1FBDE1510092638D /* TimelineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineUseCase.swift; sourceTree = "<group>"; };
+		8C6D19D01FBDE2A00092638D /* Algolia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algolia.swift; sourceTree = "<group>"; };
+		8C6D19D21FBDE2BD0092638D /* Algolia+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algolia+Feed.swift"; sourceTree = "<group>"; };
+		8C6D19D41FBDE2D20092638D /* Algolia+Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algolia+Diary.swift"; sourceTree = "<group>"; };
+		8C6D19D61FBDE2DA0092638D /* Algolia+Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algolia+Photo.swift"; sourceTree = "<group>"; };
+		8C6D19D81FBDE5D90092638D /* AlgoliaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaRepository.swift; sourceTree = "<group>"; };
+		8C6D19DB1FBDE63E0092638D /* AlgoliaFeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaFeedRequest.swift; sourceTree = "<group>"; };
+		8C82394B1FBEA5CB00F61725 /* TimelineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDataSource.swift; sourceTree = "<group>"; };
+		8CA7A99C1FC04844008F95DB /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		8CA7A99E1FC069A6008F95DB /* DiaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryViewController.storyboard; sourceTree = "<group>"; };
+		8CCE21081FBB366E00FEBDC9 /* Firebase+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Post.swift"; sourceTree = "<group>"; };
+		8CCE210A1FBB3C0700FEBDC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8CCE210C1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationRepository.swift; sourceTree = "<group>"; };
+		8CCE210E1FBB3FC700FEBDC9 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		8CCE21101FBB400D00FEBDC9 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		8CCE21121FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+CloseButton.swift"; sourceTree = "<group>"; };
+		8CCE21141FBB4F2600FEBDC9 /* UITextView+CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CloseButton.swift"; sourceTree = "<group>"; };
+		8CD2B09F1FB7271C0064FDCD /* AlgoliaFirebaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoliaFirebaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD2B0A21FB7271C0064FDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CD2B0A91FB7271C0064FDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CD2B0AC1FB7271C0064FDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CD2B0AE1FB7271C0064FDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD948881FB83C11000C85A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CD9488A1FB83CA2000C85A9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		8CD9488C1FB83CBA000C85A9 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		8CD9488E1FB8515C000C85A9 /* Array+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		8CD948941FB85448000C85A9 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		8CD948961FB85452000C85A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8CD948981FB8545B000C85A9 /* DiaryPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPostViewController.swift; sourceTree = "<group>"; };
+		8CD9489A1FB85463000C85A9 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		8CE466D81FB985FC0038EDD8 /* DiaryPostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryPostViewController.storyboard; sourceTree = "<group>"; };
+		8CE527001FBC901C00061E19 /* Firebase+Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Relation.swift"; sourceTree = "<group>"; };
+		8CE527021FBC913400061E19 /* Firebase+Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Diary.swift"; sourceTree = "<group>"; };
+		BF5B3CE171F692E82EAD62E2 /* Pods-AlgoliaFirebaseSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgoliaFirebaseSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgoliaFirebaseSample/Pods-AlgoliaFirebaseSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CD2B09C1FB7271C0064FDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCE210B1FBB3C1500FEBDC9 /* CoreLocation.framework in Frameworks */,
+				F443DEFCF2B8500986BD0BED /* Pods_AlgoliaFirebaseSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A20879F3E3FAD0FE20329B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74DB5FD100C1ACB23E603427 /* Pods-AlgoliaFirebaseSample.debug.xcconfig */,
+				BF5B3CE171F692E82EAD62E2 /* Pods-AlgoliaFirebaseSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C1F3D701FBEAF3500E29364 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D751FBEB08C00E29364 /* ContentView */,
+				8C1F3D711FBEAF4000E29364 /* FeedCell.swift */,
+				8C1F3D731FBEAF4700E29364 /* FeedCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8C1F3D751FBEB08C00E29364 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D761FBEB0B200E29364 /* FeedHeaderView.swift */,
+				8C1F3D781FBEB0BC00E29364 /* FeedHeaderView.xib */,
+				8C1F3D7C1FBEC1B100E29364 /* FeedDiaryView.swift */,
+				8C1F3D7A1FBEC1A800E29364 /* FeedDiaryView.xib */,
+				8C1F3D7E1FBEC68B00E29364 /* FeedPhotoView.swift */,
+				8C1F3D801FBEC69200E29364 /* FeedPhotoView.xib */,
+				8C1F3D821FBEC85F00E29364 /* FeedActionView.swift */,
+				8C1F3D841FBEC86B00E29364 /* FeedActionView.xib */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		8C1F3D891FBEFB3900E29364 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D8A1FBEFB5300E29364 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		8C1F3D981FBFEED700E29364 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D9B1FBFEEF200E29364 /* UserCell.swift */,
+				8C1F3D9D1FBFEEFB00E29364 /* UserCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8C25EA881FB7516300861DFA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EAAB1FB75A3C00861DFA /* GoogleService-Info.plist */,
+				8CD2B0AB1FB7271C0064FDCD /* LaunchScreen.storyboard */,
+				8CD2B0A21FB7271C0064FDCD /* AppDelegate.swift */,
+				8CD2B0AE1FB7271C0064FDCD /* Info.plist */,
+				8CD2B0A91FB7271C0064FDCD /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8C25EA891FB7518200861DFA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19CC1FBDE1430092638D /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8C25EA8A1FB7518C00861DFA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19CB1FBDE1320092638D /* Repository */,
+				8C25EA981FB7530900861DFA /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8C25EA8B1FB7519100861DFA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8CD9488A1FB83CA2000C85A9 /* ActivityIndicator.swift */,
+				8CD9488C1FB83CBA000C85A9 /* WindowManager.swift */,
+				8C25EA8C1FB7519A00861DFA /* ViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8C25EA8C1FB7519A00861DFA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CD948881FB83C11000C85A9 /* ViewController.swift */,
+				8C25EA8D1FB751C800861DFA /* Root */,
+				8C25EAA61FB7569000861DFA /* TabbarController */,
+				8C25EAA11FB754D400861DFA /* Entrance */,
+				8CD948901FB85403000C85A9 /* Timeline */,
+				8CD948911FB85414000C85A9 /* Search */,
+				8CD948921FB85419000C85A9 /* Post */,
+				8CD948931FB8541F000C85A9 /* Users */,
+				8C1F3D891FBEFB3900E29364 /* Account */,
+				8CA7A99B1FC04829008F95DB /* Diary */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C25EA8D1FB751C800861DFA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EA8E1FB751D000861DFA /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8C25EA901FB7520600861DFA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EA911FB7524500861DFA /* Extensions */,
+				8C25EAAD1FB83AFD00861DFA /* LoginHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8C25EA911FB7524500861DFA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EA921FB7525800861DFA /* UIViewController+Ex.swift */,
+				8C25EA941FB752AA00861DFA /* Auth+Rx.swift */,
+				8C25EA961FB752E600861DFA /* Result+Ex.swift */,
+				8C25EA9F1FB7541400861DFA /* Referenceable+Rx.swift */,
+				8CD9488E1FB8515C000C85A9 /* Array+Ex.swift */,
+				8CCE210E1FBB3FC700FEBDC9 /* CLLocationManager+Rx.swift */,
+				8CCE21101FBB400D00FEBDC9 /* RxCLLocationManagerDelegateProxy.swift */,
+				8CCE21121FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift */,
+				8CCE21141FBB4F2600FEBDC9 /* UITextView+CloseButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C25EA981FB7530900861DFA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19CF1FBDE2900092638D /* Algolia */,
+				8C25EA991FB7531200861DFA /* Firebase */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8C25EA991FB7531200861DFA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EA9A1FB7531C00861DFA /* Firebase.swift */,
+				8C25EA9D1FB7535C00861DFA /* Firebase+User.swift */,
+				8CCE21081FBB366E00FEBDC9 /* Firebase+Post.swift */,
+				8CE527001FBC901C00061E19 /* Firebase+Relation.swift */,
+				8CE527021FBC913400061E19 /* Firebase+Diary.swift */,
+				8C4FDBCC1FBDD99B006566F4 /* Firebase+Photo.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		8C25EAA11FB754D400861DFA /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EAA21FB754DF00861DFA /* EntranceViewController.swift */,
+				8C25EAA41FB7550500861DFA /* EntranceViewController.storyboard */,
+			);
+			path = Entrance;
+			sourceTree = "<group>";
+		};
+		8C25EAA61FB7569000861DFA /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EAA71FB756BB00861DFA /* TabBarController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		8C4FDBC01FBDD0BB006566F4 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				8CD948981FB8545B000C85A9 /* DiaryPostViewController.swift */,
+				8CE466D81FB985FC0038EDD8 /* DiaryPostViewController.storyboard */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		8C4FDBC71FBDD634006566F4 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				8C4FDBC81FBDD63D006566F4 /* PhotoPostViewController.swift */,
+				8C4FDBCA1FBDD64A006566F4 /* PhotoPostViewController.storyboard */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		8C6D19CB1FBDE1320092638D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8CCE210C1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift */,
+				8C6D19D81FBDE5D90092638D /* AlgoliaRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8C6D19CC1FBDE1430092638D /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19CD1FBDE1510092638D /* TimelineUseCase.swift */,
+				8C1F3D8C1FBF25E800E29364 /* SearchUseCase.swift */,
+				8C1F3D921FBFE61700E29364 /* UsersUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8C6D19CF1FBDE2900092638D /* Algolia */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19D01FBDE2A00092638D /* Algolia.swift */,
+				8C6D19D21FBDE2BD0092638D /* Algolia+Feed.swift */,
+				8C6D19D41FBDE2D20092638D /* Algolia+Diary.swift */,
+				8C6D19D61FBDE2DA0092638D /* Algolia+Photo.swift */,
+				8C1F3D941FBFE64E00E29364 /* Algolia+User.swift */,
+			);
+			path = Algolia;
+			sourceTree = "<group>";
+		};
+		8C6D19DA1FBDE6250092638D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D19DB1FBDE63E0092638D /* AlgoliaFeedRequest.swift */,
+				8C1F3D961FBFEA3E00E29364 /* AlgoliaUserRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8CA7A99B1FC04829008F95DB /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				8CA7A99C1FC04844008F95DB /* DiaryViewController.swift */,
+				8CA7A99E1FC069A6008F95DB /* DiaryViewController.storyboard */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		8CD2B0961FB7271C0064FDCD = {
+			isa = PBXGroup;
+			children = (
+				8CD2B0A11FB7271C0064FDCD /* AlgoliaFirebaseSample */,
+				8CD2B0A01FB7271C0064FDCD /* Products */,
+				0A20879F3E3FAD0FE20329B0 /* Pods */,
+				DED20CEFFE327C132BD6C58E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CD2B0A01FB7271C0064FDCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2B09F1FB7271C0064FDCD /* AlgoliaFirebaseSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CD2B0A11FB7271C0064FDCD /* AlgoliaFirebaseSample */ = {
+			isa = PBXGroup;
+			children = (
+				8C25EA881FB7516300861DFA /* Application */,
+				8C25EA901FB7520600861DFA /* Util */,
+				8C6D19DA1FBDE6250092638D /* API */,
+				8C25EA8A1FB7518C00861DFA /* Data */,
+				8C25EA891FB7518200861DFA /* Domain */,
+				8C25EA8B1FB7519100861DFA /* Presentation */,
+			);
+			path = AlgoliaFirebaseSample;
+			sourceTree = "<group>";
+		};
+		8CD948901FB85403000C85A9 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D701FBEAF3500E29364 /* Components */,
+				8CD948941FB85448000C85A9 /* TimelineViewController.swift */,
+				8C82394B1FBEA5CB00F61725 /* TimelineDataSource.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		8CD948911FB85414000C85A9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8CD948961FB85452000C85A9 /* SearchViewController.swift */,
+				8C1F3D8E1FBF2F4000E29364 /* SearchDataSource.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8CD948921FB85419000C85A9 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				8C4FDBC71FBDD634006566F4 /* Photo */,
+				8C4FDBC01FBDD0BB006566F4 /* Diary */,
+				8C4FDBC11FBDD0E1006566F4 /* PostViewController.swift */,
+				8C4FDBC31FBDD0EC006566F4 /* PostViewController.storyboard */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		8CD948931FB8541F000C85A9 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F3D981FBFEED700E29364 /* Components */,
+				8CD9489A1FB85463000C85A9 /* UsersViewController.swift */,
+				8C1F3D901FBFE60800E29364 /* UsersDataSource.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		DED20CEFFE327C132BD6C58E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CCE210A1FBB3C0700FEBDC9 /* CoreLocation.framework */,
+				2AF503D29C8EA96FD2937F87 /* Pods_AlgoliaFirebaseSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CD2B09E1FB7271C0064FDCD /* AlgoliaFirebaseSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CD2B0B11FB7271C0064FDCD /* Build configuration list for PBXNativeTarget "AlgoliaFirebaseSample" */;
+			buildPhases = (
+				1546FE255E0B431B8B9FF287 /* [CP] Check Pods Manifest.lock */,
+				8CD2B09B1FB7271C0064FDCD /* Sources */,
+				8CD2B09C1FB7271C0064FDCD /* Frameworks */,
+				8CD2B09D1FB7271C0064FDCD /* Resources */,
+				AAA91ABD7B28403A39EC38B8 /* [CP] Embed Pods Frameworks */,
+				D07372ED3F5B8A5E262294FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlgoliaFirebaseSample;
+			productName = AlgoliaFirebaseSample;
+			productReference = 8CD2B09F1FB7271C0064FDCD /* AlgoliaFirebaseSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CD2B0971FB7271C0064FDCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "kazuya-miura";
+				TargetAttributes = {
+					8CD2B09E1FB7271C0064FDCD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8CD2B09A1FB7271C0064FDCD /* Build configuration list for PBXProject "AlgoliaFirebaseSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CD2B0961FB7271C0064FDCD;
+			productRefGroup = 8CD2B0A01FB7271C0064FDCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CD2B09E1FB7271C0064FDCD /* AlgoliaFirebaseSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CD2B09D1FB7271C0064FDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD2B0AD1FB7271C0064FDCD /* LaunchScreen.storyboard in Resources */,
+				8C1F3D741FBEAF4700E29364 /* FeedCell.xib in Resources */,
+				8C4FDBCB1FBDD64A006566F4 /* PhotoPostViewController.storyboard in Resources */,
+				8C4FDBC41FBDD0EC006566F4 /* PostViewController.storyboard in Resources */,
+				8CD2B0AA1FB7271C0064FDCD /* Assets.xcassets in Resources */,
+				8CE466D91FB985FC0038EDD8 /* DiaryPostViewController.storyboard in Resources */,
+				8C1F3D7B1FBEC1A800E29364 /* FeedDiaryView.xib in Resources */,
+				8C1F3D811FBEC69200E29364 /* FeedPhotoView.xib in Resources */,
+				8C1F3D851FBEC86B00E29364 /* FeedActionView.xib in Resources */,
+				8C25EAA51FB7550500861DFA /* EntranceViewController.storyboard in Resources */,
+				8C25EAAC1FB75A3C00861DFA /* GoogleService-Info.plist in Resources */,
+				8C1F3D791FBEB0BC00E29364 /* FeedHeaderView.xib in Resources */,
+				8C1F3D9E1FBFEEFB00E29364 /* UserCell.xib in Resources */,
+				8CA7A99F1FC069A6008F95DB /* DiaryViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1546FE255E0B431B8B9FF287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlgoliaFirebaseSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA91ABD7B28403A39EC38B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlgoliaFirebaseSample/Pods-AlgoliaFirebaseSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alertift/Alertift.framework",
+				"${BUILT_PRODUCTS_DIR}/Algent/Algent.framework",
+				"${BUILT_PRODUCTS_DIR}/AlgoliaSearch-Client-Swift/AlgoliaSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/I/I.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageStore/ImageStore.framework",
+				"${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantiateStandard/InstantiateStandard.framework",
+				"${BUILT_PRODUCTS_DIR}/Pick/Pick.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRegExp/SwiftRegExp.framework",
+				"${BUILT_PRODUCTS_DIR}/TextAttributes/TextAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alertift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Algent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlgoliaSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/I.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageStore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instantiate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantiateStandard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRegExp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgoliaFirebaseSample/Pods-AlgoliaFirebaseSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D07372ED3F5B8A5E262294FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlgoliaFirebaseSample/Pods-AlgoliaFirebaseSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CD2B09B1FB7271C0064FDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD948991FB8545B000C85A9 /* DiaryPostViewController.swift in Sources */,
+				8C6D19D11FBDE2A00092638D /* Algolia.swift in Sources */,
+				8CCE210F1FBB3FC700FEBDC9 /* CLLocationManager+Rx.swift in Sources */,
+				8C6D19D71FBDE2DA0092638D /* Algolia+Photo.swift in Sources */,
+				8C25EA8F1FB751D000861DFA /* RootViewController.swift in Sources */,
+				8C25EAA01FB7541400861DFA /* Referenceable+Rx.swift in Sources */,
+				8C25EA931FB7525800861DFA /* UIViewController+Ex.swift in Sources */,
+				8CD948971FB85452000C85A9 /* SearchViewController.swift in Sources */,
+				8C6D19D51FBDE2D20092638D /* Algolia+Diary.swift in Sources */,
+				8C6D19DC1FBDE63E0092638D /* AlgoliaFeedRequest.swift in Sources */,
+				8C1F3D911FBFE60800E29364 /* UsersDataSource.swift in Sources */,
+				8C1F3D8B1FBEFB5300E29364 /* AccountViewController.swift in Sources */,
+				8C1F3D971FBFEA3E00E29364 /* AlgoliaUserRequest.swift in Sources */,
+				8C25EAA81FB756BB00861DFA /* TabBarController.swift in Sources */,
+				8C1F3D7D1FBEC1B100E29364 /* FeedDiaryView.swift in Sources */,
+				8CD9488B1FB83CA2000C85A9 /* ActivityIndicator.swift in Sources */,
+				8C25EAAE1FB83AFD00861DFA /* LoginHelper.swift in Sources */,
+				8C25EA9B1FB7531C00861DFA /* Firebase.swift in Sources */,
+				8C1F3D721FBEAF4000E29364 /* FeedCell.swift in Sources */,
+				8CD948891FB83C11000C85A9 /* ViewController.swift in Sources */,
+				8C1F3D8F1FBF2F4000E29364 /* SearchDataSource.swift in Sources */,
+				8CE527031FBC913400061E19 /* Firebase+Diary.swift in Sources */,
+				8C1F3D951FBFE64E00E29364 /* Algolia+User.swift in Sources */,
+				8CD9488F1FB8515C000C85A9 /* Array+Ex.swift in Sources */,
+				8CD2B0A31FB7271C0064FDCD /* AppDelegate.swift in Sources */,
+				8CD9488D1FB83CBA000C85A9 /* WindowManager.swift in Sources */,
+				8C82394C1FBEA5CB00F61725 /* TimelineDataSource.swift in Sources */,
+				8C4FDBCD1FBDD99B006566F4 /* Firebase+Photo.swift in Sources */,
+				8C25EA971FB752E600861DFA /* Result+Ex.swift in Sources */,
+				8C1F3D771FBEB0B200E29364 /* FeedHeaderView.swift in Sources */,
+				8C4FDBC21FBDD0E1006566F4 /* PostViewController.swift in Sources */,
+				8C25EAA31FB754DF00861DFA /* EntranceViewController.swift in Sources */,
+				8C4FDBC91FBDD63D006566F4 /* PhotoPostViewController.swift in Sources */,
+				8CD948951FB85448000C85A9 /* TimelineViewController.swift in Sources */,
+				8C1F3D7F1FBEC68B00E29364 /* FeedPhotoView.swift in Sources */,
+				8C6D19CE1FBDE1510092638D /* TimelineUseCase.swift in Sources */,
+				8CCE21091FBB366E00FEBDC9 /* Firebase+Post.swift in Sources */,
+				8C25EA9E1FB7535C00861DFA /* Firebase+User.swift in Sources */,
+				8C1F3D9C1FBFEEF200E29364 /* UserCell.swift in Sources */,
+				8C1F3D831FBEC86000E29364 /* FeedActionView.swift in Sources */,
+				8C1F3D8D1FBF25E800E29364 /* SearchUseCase.swift in Sources */,
+				8C25EA951FB752AA00861DFA /* Auth+Rx.swift in Sources */,
+				8CCE21131FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift in Sources */,
+				8C1F3D931FBFE61700E29364 /* UsersUseCase.swift in Sources */,
+				8C6D19D31FBDE2BD0092638D /* Algolia+Feed.swift in Sources */,
+				8CCE210D1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift in Sources */,
+				8C6D19D91FBDE5D90092638D /* AlgoliaRepository.swift in Sources */,
+				8CCE21151FBB4F2600FEBDC9 /* UITextView+CloseButton.swift in Sources */,
+				8CA7A99D1FC04844008F95DB /* DiaryViewController.swift in Sources */,
+				8CCE21111FBB400D00FEBDC9 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				8CE527011FBC901C00061E19 /* Firebase+Relation.swift in Sources */,
+				8CD9489B1FB85463000C85A9 /* UsersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CD2B0AB1FB7271C0064FDCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CD2B0AC1FB7271C0064FDCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CD2B0AF1FB7271C0064FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CD2B0B01FB7271C0064FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CD2B0B21FB7271C0064FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DB5FD100C1ACB23E603427 /* Pods-AlgoliaFirebaseSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y54QU7AU8E;
+				INFOPLIST_FILE = AlgoliaFirebaseSample/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.miup.AlgoliaFirebaseSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8CD2B0B31FB7271C0064FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5B3CE171F692E82EAD62E2 /* Pods-AlgoliaFirebaseSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y54QU7AU8E;
+				INFOPLIST_FILE = AlgoliaFirebaseSample/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.miup.AlgoliaFirebaseSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CD2B09A1FB7271C0064FDCD /* Build configuration list for PBXProject "AlgoliaFirebaseSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD2B0AF1FB7271C0064FDCD /* Debug */,
+				8CD2B0B01FB7271C0064FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CD2B0B11FB7271C0064FDCD /* Build configuration list for PBXNativeTarget "AlgoliaFirebaseSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD2B0B21FB7271C0064FDCD /* Debug */,
+				8CD2B0B31FB7271C0064FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CD2B0971FB7271C0064FDCD /* Project object */;
+}

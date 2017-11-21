@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wmd-X5-KcE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entrance View Controller-->
+        <scene sceneID="s7d-OM-Flp">
+            <objects>
+                <viewController id="wmd-X5-KcE" customClass="EntranceViewController" customModule="AlgoliaFirebaseSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2QX-8D-Gwl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG1-5M-d8a">
+                                <rect key="frame" x="64" y="248" width="246" height="30"/>
+                                <color key="backgroundColor" red="0.93603515625" green="0.48963758680555558" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="新規登録">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iMasksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-nq-EcA">
+                                <rect key="frame" x="32" y="194" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7A-0z-0Py">
+                                <rect key="frame" x="64" y="294" width="246" height="30"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.23137254900000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iMasksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-VH-UIP">
+                                <rect key="frame" x="32" y="148" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kcS-VH-UIP" firstAttribute="centerX" secondItem="2QX-8D-Gwl" secondAttribute="centerX" id="3El-os-ud0"/>
+                            <constraint firstItem="kG1-5M-d8a" firstAttribute="leading" secondItem="Oys-5i-jzF" secondAttribute="leading" constant="64" id="3TW-MZ-wZI"/>
+                            <constraint firstItem="NSe-nq-EcA" firstAttribute="leading" secondItem="Oys-5i-jzF" secondAttribute="leading" constant="32" id="8EY-pH-A2S"/>
+                            <constraint firstItem="kG1-5M-d8a" firstAttribute="centerX" secondItem="2QX-8D-Gwl" secondAttribute="centerX" id="AbN-PQ-ouR"/>
+                            <constraint firstItem="kcS-VH-UIP" firstAttribute="top" secondItem="Oys-5i-jzF" secondAttribute="top" constant="128" id="Ex7-If-TJf"/>
+                            <constraint firstItem="r7A-0z-0Py" firstAttribute="centerX" secondItem="2QX-8D-Gwl" secondAttribute="centerX" id="FnR-CB-3ql"/>
+                            <constraint firstItem="NSe-nq-EcA" firstAttribute="top" secondItem="kcS-VH-UIP" secondAttribute="bottom" constant="16" id="JRa-dB-Jvn"/>
+                            <constraint firstItem="r7A-0z-0Py" firstAttribute="leading" secondItem="kG1-5M-d8a" secondAttribute="leading" id="RlG-sN-qza"/>
+                            <constraint firstItem="kG1-5M-d8a" firstAttribute="top" secondItem="NSe-nq-EcA" secondAttribute="bottom" constant="24" id="XpA-4u-SYx"/>
+                            <constraint firstItem="kcS-VH-UIP" firstAttribute="leading" secondItem="Oys-5i-jzF" secondAttribute="leading" constant="32" id="dDB-dc-imP"/>
+                            <constraint firstItem="r7A-0z-0Py" firstAttribute="top" secondItem="kG1-5M-d8a" secondAttribute="bottom" constant="16" id="dLL-7R-eBH"/>
+                            <constraint firstItem="NSe-nq-EcA" firstAttribute="centerX" secondItem="2QX-8D-Gwl" secondAttribute="centerX" id="ryf-JR-2mD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oys-5i-jzF"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="kcS-VH-UIP" id="YE4-On-LF2"/>
+                        <outlet property="loginButton" destination="r7A-0z-0Py" id="6kx-mY-0jS"/>
+                        <outlet property="passwordTextField" destination="NSe-nq-EcA" id="qXD-3f-b3Y"/>
+                        <outlet property="signUpButton" destination="kG1-5M-d8a" id="9n5-1K-jyc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-I2-3Qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="8.5457271364317844"/>
+        </scene>
+    </scenes>
+</document>
