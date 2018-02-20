@@ -51,6 +51,7 @@
 		8C6D19D91FBDE5D90092638D /* AlgoliaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19D81FBDE5D90092638D /* AlgoliaRepository.swift */; };
 		8C6D19DC1FBDE63E0092638D /* AlgoliaFeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D19DB1FBDE63E0092638D /* AlgoliaFeedRequest.swift */; };
 		8C82394C1FBEA5CB00F61725 /* TimelineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82394B1FBEA5CB00F61725 /* TimelineDataSource.swift */; };
+		8C9D0E66203BE3D700BC7A7C /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9D0E65203BE3D700BC7A7C /* NotificationHandler.swift */; };
 		8CA7A99D1FC04844008F95DB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7A99C1FC04844008F95DB /* DiaryViewController.swift */; };
 		8CA7A99F1FC069A6008F95DB /* DiaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA7A99E1FC069A6008F95DB /* DiaryViewController.storyboard */; };
 		8CCE21091FBB366E00FEBDC9 /* Firebase+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE21081FBB366E00FEBDC9 /* Firebase+Post.swift */; };
@@ -124,6 +125,8 @@
 		8C6D19D81FBDE5D90092638D /* AlgoliaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaRepository.swift; sourceTree = "<group>"; };
 		8C6D19DB1FBDE63E0092638D /* AlgoliaFeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaFeedRequest.swift; sourceTree = "<group>"; };
 		8C82394B1FBEA5CB00F61725 /* TimelineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDataSource.swift; sourceTree = "<group>"; };
+		8C9D0E65203BE3D700BC7A7C /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		8C9D0E67203BE4C800BC7A7C /* AlgoliaFirebaseSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlgoliaFirebaseSample.entitlements; sourceTree = "<group>"; };
 		8CA7A99C1FC04844008F95DB /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		8CA7A99E1FC069A6008F95DB /* DiaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryViewController.storyboard; sourceTree = "<group>"; };
 		8CCE21081FBB366E00FEBDC9 /* Firebase+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Post.swift"; sourceTree = "<group>"; };
@@ -285,6 +288,7 @@
 			children = (
 				8C25EA911FB7524500861DFA /* Extensions */,
 				8C25EAAD1FB83AFD00861DFA /* LoginHelper.swift */,
+				8C9D0E65203BE3D700BC7A7C /* NotificationHandler.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -432,6 +436,7 @@
 		8CD2B0A11FB7271C0064FDCD /* AlgoliaFirebaseSample */ = {
 			isa = PBXGroup;
 			children = (
+				8C9D0E67203BE4C800BC7A7C /* AlgoliaFirebaseSample.entitlements */,
 				8C25EA881FB7516300861DFA /* Application */,
 				8C25EA901FB7520600861DFA /* Util */,
 				8C6D19DA1FBDE6250092638D /* API */,
@@ -527,6 +532,11 @@
 					8CD2B09E1FB7271C0064FDCD = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -624,7 +634,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftRegExp/SwiftRegExp.framework",
-				"${BUILT_PRODUCTS_DIR}/TextAttributes/TextAttributes.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -656,7 +665,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRegExp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextAttributes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -730,6 +738,7 @@
 				8C1F3D8D1FBF25E800E29364 /* SearchUseCase.swift in Sources */,
 				8C25EA951FB752AA00861DFA /* Auth+Rx.swift in Sources */,
 				8CCE21131FBB4EBA00FEBDC9 /* UITextField+CloseButton.swift in Sources */,
+				8C9D0E66203BE3D700BC7A7C /* NotificationHandler.swift in Sources */,
 				8C1F3D931FBFE61700E29364 /* UsersUseCase.swift in Sources */,
 				8C6D19D31FBDE2BD0092638D /* Algolia+Feed.swift in Sources */,
 				8CCE210D1FBB3E1C00FEBDC9 /* GeoLocationRepository.swift in Sources */,
@@ -868,6 +877,7 @@
 			baseConfigurationReference = 74DB5FD100C1ACB23E603427 /* Pods-AlgoliaFirebaseSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlgoliaFirebaseSample/AlgoliaFirebaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y54QU7AU8E;
 				INFOPLIST_FILE = AlgoliaFirebaseSample/Application/Info.plist;
@@ -885,6 +895,7 @@
 			baseConfigurationReference = BF5B3CE171F692E82EAD62E2 /* Pods-AlgoliaFirebaseSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlgoliaFirebaseSample/AlgoliaFirebaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y54QU7AU8E;
 				INFOPLIST_FILE = AlgoliaFirebaseSample/Application/Info.plist;

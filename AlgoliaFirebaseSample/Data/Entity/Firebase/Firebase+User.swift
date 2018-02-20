@@ -67,11 +67,13 @@ extension Firebase.User {
     func follow(_ user: Firebase.User) {
         self.followee.insert(user)
         user.follower.insert(self)
+        NotificationHandler.shared.subscribe(topic: .userAction(userID: user.id))
     }
 
     func unfollow(_ user: Firebase.User) {
         self.followee.remove(user)
         user.follower.remove(self)
+        NotificationHandler.shared.unsubscribe(topic: .userAction(userID: user.id))
     }
 
     func followIfNeeded(_ user: Firebase.User) {

@@ -48,6 +48,13 @@ export const postCreated  = functions.database.ref('miup/AlgoliaFirebaseSample/v
   const firPost: firebaseModel.Post = event.data.val()
   const feedIndex = algolia.initIndex('feed')
   let user = await admin.database().ref(`miup/AlgoliaFirebaseSample/v1/user/${firPost.userID}`).once('value').then(snap => snap.val())
+  const payload = {
+    notification: {
+      title: '新しい投稿がありました',
+      body: `${user.name}が新しい投稿をしました`
+    }
+  }
+  admin.messaging().sendToTopic(`user-action-${firPost.userID}`, payload)
   switch (firPost.contentType) {
   case 1:
     let diary = await admin.database().ref(`miup/AlgoliaFirebaseSample/v1/diary/${firPost.contentID}`).once('value').then(snap => snap.val())

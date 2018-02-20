@@ -29,6 +29,11 @@ final class LoginHelper {
                 onNext: { _ in viewController.hideIndicator()},
                 onError: { _ in viewController.hideIndicator() }
             )
+        let user = Firebase.User()
+        user.save { (ref, error) in
+            guard let _ = ref else { return }
+            NotificationHandler.shared.register()
+        }
     }
 
     static func loginWith(email: String, password: String, viewController: ViewController) -> Single<Void> {

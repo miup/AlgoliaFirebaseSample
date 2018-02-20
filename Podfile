@@ -18,7 +18,6 @@ target 'AlgoliaFirebaseSample' do
   pod 'RxCocoa', '~> 4.0'
   pod 'RxOptional'
   pod 'DateToolsSwift'
-  pod 'TextAttributes'
   pod 'RxKeyboard'
   pod 'Haptica'
   pod 'Instantiate'
@@ -29,12 +28,17 @@ target 'AlgoliaFirebaseSample' do
   pod 'I'
   pod 'SwiftRegExp'
   pod 'Algent'
+  pod 'Tsuchi'
 end
 
 post_install do |installer|
+  swift3_pods = %w(SwiftRegExp)
   installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-	    config.build_settings['SWIFT_VERSION'] = '3.2'
+    if swift3_pods.include?(target.name)
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '3.2'
+      end
     end
   end
 end
+

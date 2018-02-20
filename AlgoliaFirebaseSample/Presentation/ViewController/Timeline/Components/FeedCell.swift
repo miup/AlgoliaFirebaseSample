@@ -84,5 +84,7 @@ class FeedCell: UITableViewCell, Reusable, NibType {
         if let postID = postID, let likecountHandle = likecountHandle {
             Firebase.Post.databaseRef.child(postID).child("likes/count").removeObserver(withHandle: likecountHandle)
         }
+        photoView.imageView.suspendLoading()
+        diaryView.imageView.suspendLoading()
     }
 }

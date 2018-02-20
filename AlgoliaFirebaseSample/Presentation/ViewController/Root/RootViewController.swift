@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import RxOptional
 import Firebase
+import Tsuchi
 
 class RootViewController: UIViewController {
 
@@ -75,6 +76,7 @@ class RootViewController: UIViewController {
             }
             .map { user -> RouteType in
                 guard let user = user else { return .entrance }
+                NotificationHandler.shared.register()
                 return .main(user)
             }
             .bind(to: currentRoutingType)

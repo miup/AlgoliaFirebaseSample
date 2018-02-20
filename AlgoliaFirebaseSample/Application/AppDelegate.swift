@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         GeoLocationRepository.shared.requestAuthorize()
 
+        _ = NotificationHandler.shared
+
         UIApplication.shared.registerForRemoteNotifications()
 
         return true
